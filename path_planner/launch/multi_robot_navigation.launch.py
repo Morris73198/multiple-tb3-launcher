@@ -42,7 +42,7 @@ def generate_launch_description():
     
     # 3. 啟動命令調度器
     command_dispatcher_node = Node(
-        package='multi_robot_exploration',
+        package='path_planner',
         executable='robot_command_dispatcher',
         name='robot_command_dispatcher',
         output='screen'

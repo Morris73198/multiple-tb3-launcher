@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 from glob import glob
 
-package_name = 'multi_robot_exploration'
+package_name = 'path_planner'
 
 setup(
     name=package_name,
@@ -25,9 +25,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'path_planner = multi_robot_exploration.path_planner:main',
+            'path_planner = path_planner.path_planner:main',
             # 🔄 加入新的執行檔
-            'robot_command_dispatcher = multi_robot_exploration.robot_command_dispatcher:main',
+            'robot_command_dispatcher = path_planner.robot_command_dispatcher:main',
         ],
     },
 )
